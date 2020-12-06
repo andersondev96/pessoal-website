@@ -1,0 +1,612 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  margin: 0 auto;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #333;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+header .content {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+header .content ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  margin-right: 40px;
+}
+
+header .content h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: #FFF;
+  margin-left: 40px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+li a:hover {
+  background-color:  #FF9304;
+}
+
+div.banner {
+  height: 380px;
+  width: 100%;
+  background: #292C2D;
+  display: flex;
+}
+
+div.banner .content {
+  margin-left: 200px;
+  margin-top: 60px;
+}
+
+div.banner h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  color: #FFF;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+div.banner h1 {
+  font-family: 'Fredoka One', cursive;
+  color: #FFF;
+  font-weight: 400;
+  font-size: 60pt;
+}
+
+div.banner p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FF9304;
+  font-size: 16pt;
+  margin-top: 10px;
+}
+
+div.banner .button-about {
+  width: 125px;
+  height: 50px;
+  align-items: center;
+  margin-top: 40px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  background-color: #3080FF;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFF;
+  font-size: 12pt;
+}
+
+div.banner .button-about:hover {
+  background-color: #3080FF;
+  opacity: 0.8;
+}
+
+div.banner .imagem {
+  margin-top: 30px;
+  margin-right: 300px;
+  
+}
+
+div.banner img{
+  height: 350px;
+}
+
+section.about {
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+  height: 400px;
+
+}
+
+section.about .imagem {
+  margin-left: 100px;
+  overflow: hidden;
+  border: 4px solid #FF9304;
+  height: 350px;
+  margin-top: 50px;
+}
+
+
+section.about .imagem img {
+  height: 350px;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  
+}
+
+section.about .imagem:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+section.about .text {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin-left: 150px;
+  margin-top: 50px;
+}
+
+section.about .text h1 {
+  font-family: 'Fredoka One', cursive;
+  font-weight: 400;
+  font-size: 32pt;
+  border-bottom: 4px solid #FF9304;
+  width: 220px;
+  /* width: 250px; */
+}
+
+section.about .text p {
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+}
+
+section.experiences {
+  width: 100%;
+  height: 1700px;
+  background-color: #303631;
+  margin-top: 50px;
+}
+
+section.experiences h1 {
+  font-family: 'Fredoka One', cursive;
+  font-weight: 400;
+  font-size: 32pt;
+  text-align: center;
+  padding: 50px;
+  color: #FFF;
+  transition: text-shadow .3s;
+}
+
+section.experiences h1:hover {
+  text-shadow: #FF9304 0.05em 0.05em 0.1em;
+}
+
+
+section.experiences .secao-experiencias .empresa {
+  margin-top: 20px;
+  width: 40%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+section.experiences .secao-experiencias .empresa .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 50px;
+}
+
+section.experiences .secao-experiencias .empresa .cargos {
+  grid-template-columns: 600px 600px;
+  align-items: center;
+}
+
+section.experiences .secao-experiencias .empresa .cargos .cargo {
+  margin-right: 100px;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  padding: 20px;
+  border: 4px solid #FFF;
+  
+}
+
+section.experiences .secao-experiencias .empresa .cargos .cargo:hover {
+  box-shadow: 5px 5px 5px 5px #FF9304 ;
+}
+
+section.experiences .secao-experiencias .empresa h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22pt;
+  color: #FFF;
+}
+
+section.experiences .secao-experiencias .empresa span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  color: #FFF;
+}
+
+section.experiences .secao-experiencias .empresa h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16pt;
+  font-weight: 400;
+  margin-top: 20px;
+  color: #FF9304;
+}
+
+section.experiences .secao-experiencias .empresa p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  color: #FFF;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+section.experiences .secao-experiencias .empresa #mais {
+  display: none;
+}
+
+section.formation {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 400px;
+  background-color: #FFF;
+  margin-top: 120px;
+}
+
+section.formation .formacoes {
+  display: flex;
+  flex-direction: row;
+}
+
+section.formation h1 {
+  margin-left: 200px;
+  font-family: 'Fredoka One', cursive;
+  font-size: 48pt;
+  font-weight: 400;
+  
+  border-bottom: 4px solid #FF9304;
+  width: 350px;
+}
+
+section.formation .formacao h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16pt;
+  margin-top: 50px;
+  margin-left: 200px;
+  margin-right: 20px;
+}
+
+section.formation .formacao ul {
+  margin-left: 200px;
+  margin-top: 10px;
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+}
+
+section.hability {
+  background-color: #303631;
+  height: 1000px;
+  width: 100%;
+  padding-bottom: 40px;
+  margin-right: 200px;
+}
+
+section.hability h1 {
+  margin-left: 200px;
+  font-family: 'Fredoka One', cursive;
+  font-size: 36pt;
+  color: #FFF;
+  font-weight: 400;
+  padding-top: 40px;
+  border-bottom: 4px solid #FF9304;
+  width: 270px;
+}
+
+section.hability .container-habilidades {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-left: 200px;
+  margin-top: 50px;
+  margin-right: 200px;
+}
+
+section.hability .container-habilidades .habilidade {
+  background: #fff;
+  padding: 20px;
+  transition: border .5s ease;
+  margin-left: 20px;
+  margin-top: 60px;
+  max-width: 165px;
+  max-height: 165px;
+  border-radius: 8px;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+section.hability .container-habilidades .habilidade:hover {
+  background: #000;
+  opacity: 0.5;
+  color: #fff;
+}
+
+section.hability .container-habilidades .habilidade .text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16pt;
+  margin-top: 18px;
+  font-weight: 600;
+}
+
+section.hability .container-habilidades .habilidade .star {
+  font-size: 14pt;
+
+}
+
+section.hability .container-habilidades .habilidade .star .color {
+  color: #FF9304;
+}
+
+section.projects {
+  width: 100%;
+  height: 600px;
+}
+
+section.projects h1 {
+  margin-left: 200px;
+  margin-top: 100px;
+  font-family: 'Fredoka One', cursive;
+  font-size: 36pt;
+  font-weight: 400;
+  border-bottom: 4px solid #FF9304;
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+section.projects .projetos {
+  margin-top: 100px;
+  margin-left: 200px;
+  height: auto;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  overflow: hidden;
+}
+
+section.projects .projetos .projeto {
+  display: flex;
+  width: 100%;
+  animation: slidy 15s infinite;
+}
+section.projects .projetos .projeto img{
+  width: calc(100%/3);
+  flex: 1;
+  padding: 0 .5rem;
+}
+
+section.projects .projetos .projeto img:hover {
+  opacity: 0.8;
+}
+
+@keyframes slidy {
+  0%{margin-left:0%;}
+  20%{margin-left:0%;}
+
+  25%{margin-left:-100%;}
+  45%{margin-left:-100%;}
+
+  50%{margin-left:-200%;}
+  70%{margin-left:-200%;}
+
+  75%{margin-left:-100%;}
+  95%{margin-left:-100%;}
+
+ 100%{margin-left:0%;}
+}
+
+section.projects .dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+section.projects .active {
+  background-color:  #FF9304;
+}
+
+section.certifications {
+  background-color: #303631;
+  height: 1400px;
+  width: 100%;
+  padding-left: 200px;
+  padding-top: 100px;
+  
+}
+
+section.certifications h1 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 36pt;
+  font-weight: 400;
+  color: #fff;
+  border-bottom: 4px solid #FF9304;
+  width: 315px;
+}
+
+section.certifications .certificacoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-right: 100px;
+  
+  align-items: center;
+}
+
+section.certifications .certificacao {
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+section.certifications .certificacao img {
+  width: 320px;
+  
+  border: 4px solid #FF9304;
+}
+
+section.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 400px;
+}
+
+section.contact .contato {
+  margin-top: 100px;
+  margin-left: 200px;
+}
+
+section.contact .contato h1 {
+  font-family: 'Fredoka One', cursive;
+  font-weight: 400;
+  font-size: 32pt;
+  border-bottom: 4px solid #FF9304;
+  width: 180px;
+}
+
+section.contact .contato .forma-contato  {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+}
+
+section.contact .contato .forma-contato img {
+  width: 24px;
+  margin-top: 20px;
+}
+
+section.contact .contato .forma-contato .text {
+  margin-top: 2px;
+  margin-left: 25px;
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section.contact .imagem {
+  width: 400px;
+  height: 400px;
+  margin-right: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.contact .imagem img {
+  width: 280px;
+}
+
+section.contact .saibamais {
+  margin-top: 130px;
+  margin-right: 400px;
+}
+
+section.contact .saibamais h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18pt;
+}
+
+section.curriculo {
+  background: #CCCEE3;
+  width: 100%;
+  height: 140px;
+}
+
+section.curriculo .texto {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16pt;
+  color: #000;
+  padding: 20px;
+  text-align: center;
+}
+
+section.curriculo button {
+  margin-left: 47%;
+  width: 125px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  background-color: #3080FF;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFF;
+  font-size: 12pt;
+}
+
+section.curriculo button:hover {
+  background-color: #3080FF;
+  opacity: 0.8;
+}
+
+footer {
+  background-color: #333;
+  height: 150px;
+}
+
+footer .icons {
+  margin-left: 40%;
+  padding: 25px;
+}
+
+footer .author {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .author p {
+  margin-left: 40%;
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFF;
+}
+
+footer .author .back-up {
+  margin-right: 24px;
+}
+
+footer .author .back-up img {
+  width: 32px;
+}
+
+footer .icons img {
+  width: 36px;
+  margin-left: 20px;
+}
+
+
+
+
+
+
+
+
