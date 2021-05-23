@@ -62,6 +62,88 @@ li a:hover {
   background-color:  #FF9304;
 }
 
+
+header .content label[for="bt_menu"] {
+  padding: 5px;
+  background-color: #333 ;
+  color: #FFF;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+  height: 50px;
+}
+
+label[for="bt_menu"] {
+  padding: 5px;
+  background-color: #333;
+  color: #FFF;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+}
+
+label[for="bt_menu"] { 
+  display: none;
+}
+
+#bt_menu {
+  display: none;
+}
+
+@media(max-width: 800px) {
+
+  label[for="bt_menu"] { 
+    display: block;
+  }
+
+  header {
+    position: relative;
+    width: 800px;
+    background-color: #333;
+    opacity: 1;
+  }
+
+  header {
+    margin-top: 0;
+    margin-left: -100%;
+    transition: all .4s;
+  }
+
+  #bt_menu:checked ~ header {
+    margin-left: 0;
+  }
+
+  header .content h4 {
+    display: none;
+  }
+
+  header .content ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  header .content ul li {
+    width: 100%;
+  }
+
+  header .content nav {
+    width: 100%;
+    float: none;
+  }
+
+  #bt_menu {
+    display: none;
+  }
+  
+}
+
+
 div.banner {
   height: 380px;
   width: 100%;
@@ -125,6 +207,16 @@ div.banner img{
   height: 350px;
 }
 
+@media(max-width: 800px) {
+  div.banner {
+    width: 100%;
+  }
+
+  div.banner .content {
+    margin-left: 8%;
+  }
+}
+
 section.about {
   display: flex;
   flex-direction: row;
@@ -176,6 +268,39 @@ section.about .text p {
   margin-top: 20px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12pt;
+}
+
+@media(max-width: 800px) {
+  section.about {
+    height: 100%;
+  }
+
+  section.about .imagem {
+    margin-left: 5px;
+    height: 100%;
+    width: 100%;
+  }
+
+  section.about .imagem img{
+    width: 100%;
+    height: 100%;
+  }
+
+  section.about .text {
+    margin-left: 5%;
+    margin-right: 2%;
+  }
+
+  section.about .text h1 {
+    font-size: 24pt;
+    width: 164px;
+  }
+
+  section.about .text p {
+    font-size: 9pt;
+  }
+
+  
 }
 
 section.experiences {
@@ -263,6 +388,26 @@ section.experiences .secao-experiencias .empresa #mais {
   display: none;
 }
 
+@media(max-width: 800px) {
+
+  section.experiences {
+    width: 100%;
+    height: 100%;
+  }
+  section.experiences .secao-experiencias .empresa .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  section.experiences .secao-experiencias .empresa .cargos {
+    grid-template-columns: 600px;
+  }
+
+  section.experiences .secao-experiencias .empresa {
+    margin-left: 10%;
+  }
+}
+
 section.formation {
   display: flex;
   flex-direction: row;
@@ -301,6 +446,18 @@ section.formation .formacao ul {
   list-style-type: none;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14pt;
+}
+
+@media(max-width: 800px) {
+  section.formation h1 {
+    margin-left: 10%;
+    font-size: 24pt;
+    width: 180px;
+  }
+
+  section.formation .formacoes {
+    margin-left: -100px;
+  }
 }
 
 section.hability {
@@ -364,6 +521,27 @@ section.hability .container-habilidades .habilidade .star {
 section.hability .container-habilidades .habilidade .star .color {
   color: #FF9304;
 }
+
+@media(max-width: 800px) {
+  section.hability {
+    width: 100%;
+    height: 100%;
+  }
+  section.hability h1 {
+    font-size: 24pt;
+    margin-left: 20px;
+    width: 190px;
+  }
+
+  section.hability .container-habilidades {
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-right: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+  }
+}
+
 
 section.projects {
   width: 100%;
@@ -436,6 +614,23 @@ section.projects .active {
   background-color:  #FF9304;
 }
 
+@media(max-width: 800px) {
+  section.projects {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 100px;
+    
+  }
+
+  section.projects h1 {
+    margin-left: 20px;
+  }
+
+  section.projects .projetos {
+    margin-left: 20px;
+  }
+}
+
 section.certifications {
   background-color: #303631;
   height: 1400px;
@@ -471,6 +666,28 @@ section.certifications .certificacao img {
   width: 320px;
   
   border: 4px solid #FF9304;
+}
+
+@media(max-width: 800px) {
+
+  section.certifications {
+    padding-left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  section.certifications h1 {
+    margin-left: 20px;
+    font-size: 24pt;
+    width: 210px;
+  }
+
+  section.certifications .certificacoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+
 }
 
 section.contact {
@@ -602,6 +819,8 @@ footer .icons img {
   width: 36px;
   margin-left: 20px;
 }
+
+
 
 
 
